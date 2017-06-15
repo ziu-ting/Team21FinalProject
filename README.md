@@ -1,8 +1,7 @@
-# Team21FinalProject
-10502 JerryWeb Final Project
-
 <h1>NTUST 10502網頁製作</h1>
-<h2>第二十一組期末專案「Fashare」</h2>
+10502 JerryWeb Final Project<br>
+第二十一組期末專案「Fashare」<br>
+Team21FinalProject<br>
 
 <h3>CONNECT</h3>
 
