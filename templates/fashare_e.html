@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>Fashare</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Fashare, Fashare, fashion, clothes, 時尚, 穿搭">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		{% load static %}
+		<link href="{% static '../static/blog/css/main_e.css' %}" rel="stylesheet">
+
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--HOMEVIDEO-->
+		<div id="introvideo" >
+			{% load static %}
+			<embed src="{% static '../static/blog/vid/introduce.swf' %}"></embed>
+		</div>
+	<!--/HOMEVIDEO-->
+
+	<!--NAVBAR-->
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="850" >
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		        	</button>
+		        	<!--logo-->
+		        	{% load static %}
+		          	<a class="navbar-brand" href="http://127.0.0.1:8000/english"><img src="{% static '../static/blog/pic/Logo-long-G.png' %}" style="width: 220px; height: 100px;"></a>
+		          	<!--/logo-->
+		        </div>
+		        <div id="toolnavbar" class="navbar-collapse collapse" >
+		          	<ul class="nav navbar-nav navbar-right">
+		          		<li><a href="#">HomePage</a></li>
+					    <li><a href="#section1">Feature</a></li>
+				        <li><a href="#section2">Function</a></li>
+				        <li><a href="#section3">Download</a></li>
+				        <li><a href="#section4">About Us</a></li>
+						<li><a href="#section5">Comment</a></li>				        
+		          		<li id="market"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Market</a></li>
+		          	</ul> 
+		        </div>
+			</div>
+   		</nav>
+   	<!--/NAVBAR-->
+
+   	<!--SECTION1 feature-->
+		<div id="section1" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>Three reasons, why you can't missed <span>Fashare</span></h1>
+				</div>
+			</div>
+			<!--/title-->
+			
+			<!--content-->
+			<div class="content">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/ideal.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>＂User friendly＂</h2>
+							<p>Innovative picture searching technology,<br>offer you the choice more user friendly!<br>Search the goods simply by pictures,<br>no more worries about the key words!</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/seatback.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>＂Convenience＂</h2>
+							<p>Easy upload it in four steps,<br>so you can find the best you want,<br>with the cheapest price<br>from the various shopping website!</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/quick.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>＂Instant＂</h2>
+							<p>Click and search!<br>Easily search for clothes you want<br>at anytime and anywhere,<br>to have more choices in your life!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/content-->	
+		</div>
+		<!--/SECTION1 feature-->
+
+		<!--SECTION2 work-->
+		<div id="section2" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>Let <span>Fashare</span> bring you the brand new searching experience</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="content">
+				<div class="row" id="row1">
+					<div class="col-sm-4">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/searchpage.png' %}" style="float: left;">
+					</div>
+					<div class="col-sm-8 col-xs-12">
+						<div class="work">
+							<h2 style="color:  #5CCFB7;">Search by pics</h2>
+							<p>Click and search,<br>here your order approach!</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="row2">
+					<div class="col-sm-8 col-xs-12">
+						<div class="work">
+							<h2 style="color:  #5CCFB7;">Price Comparison</h2>
+							<p>Still working on comparing the price？<br>Let us help you connect every online shop,<br>no need to search one by one anymore!</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/resultpage.png' %}" style="float: right;">
+					</div>
+				</div>
+				
+			</div>
+			<!--/content-->
+		</div>
+		<!--/SECTION2 work-->
+
+		<!--SECTION3 download-->
+		<div id="section3" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>Download <span>Fashare</span> now, colorful your life!</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="wrap">
+				<a href="#" class="button">GOOGLE PLAY</a>
+				<a href="#" class="button">APP STORE</a>
+			</div>
+
+			<!--/content-->
+		</div>
+		<!--/SECTION3 download-->
+
+		<!--SECTION4 about-->
+		<div id="section4" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>More about <span>Fashare</span>...</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="content">
+				<div class="container">
+					<!--somebody-->
+					<div class="somebody">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								{% load static %}
+								<img src="{% static '../static/blog/pic/cc.png' %}">
+								<h3>If you are<br>confusing during searching</h3>
+								<button type="button" class="btn" data-toggle="collapse" data-target="#demo1">You can...</button>
+  								<div id="demo1" class="collapse">
+									<ul>
+										<li>Check our Q&amp;A<a href="#"><span class="glyphicon glyphicon-forward"></span></a></li>
+										<li>Call us at 09:00am~17:00pm on weekdays<br><small>Phone number：0987-878-787</small></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								{% load static %}
+								<img src="{% static '../static/blog/pic/cb.png' %}">
+								<h3>If you are<br>Interesting in Fashare</h3>
+								<button type="button" class="btn" data-toggle="collapse" data-target="#demo2">You can...</button>
+  								<div id="demo2" class="collapse">
+									<ul>
+										<li>Check out our related provision and cooperation terms<a href="#"><span class="glyphicon glyphicon-forward"></span></a></li>
+										<li>Contact us with e-mail<br><small>E-mail address：fashare@xxx.com</small></li>
+										<li>Fill our serving form<a href="#section5"><span class="glyphicon glyphicon-forward"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/somebody-->					
+				</div>
+			</div>
+			<!--/content-->
+		</div>
+		<!--/SECTION4-->
+
+		<!--SECTION5-->
+		<div id="section5" class="container-fluid" style="background-color: rgba(250, 199, 133, 0.1);">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>Let <span>Fashare</span> solve your problem.</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<div class="content">
+				{% block content %}
+				<div class='container'>
+					{% if message %}
+						<div class='alert alert-warning'>{{ message }}</div>
+					{% endif %}
+						
+					<form name="comment" onsubmit="success()">
+						<div class="col-md-4 form-line">
+				  			<div class="control-group">
+				  				<label class="control-label" for="user_id_e">Name</label>
+				  				<div class="controls">
+				  					<input required="" type="text" class="form-control" id="user_id_e" name='user_id_e' placeholder="Please input your Name...">
+				  				</div>
+						    	
+					  		</div>
+					  		<div class="control-group">
+						    	<label class="control-label" for="user_email_e">Email</label>
+						    	<div class="controls">
+				  					<input required="" type="email" class="form-control" id="user_email_e" name='user_email_e' placeholder="Please input your Email...">
+				  				</div>
+						    	
+						  	</div>	
+				  		</div>
+				  		<div class="col-md-8">
+				  			<div class="control-group">
+						    	<label class="control-label" for="post_title_e">Subject</label>
+						    	<div class="controls">
+				  					<input required="" type="text" class="form-control" id="post_title_e" name='post_title_e' placeholder="Please input your Subject...">
+				  				</div>
+						    	
+						  	</div>	
+				  			<div class="control-group">
+				  				<label class="control-label" for ="user_post_e">Content</label>
+				  				<div class="controls">
+				  					<textarea required="" class="form-control" id="user_post_e" name='user_post_e' placeholder="Please input your content..."></textarea>
+				  				</div> 	
+				  			</div>
+				  			<div>
+				  				<input type='submit' value='Send' class="submit">
+				  					<script type="text/javascript">
+				  						function success() {
+
+				  							alert("Submitted successfully ! \n\n Check the 'OK' button and the page will be refreshed...");
+				  						}
+				  					</script>
+				  					
+					    		<input type='reset' value='Clean' class="submit">
+				  			</div>
+						</div>
+					</form>
+				</div>
+
+				{% endblock %}
+
+			</div>
+			<!--content-->
+		</div>
+		<!--/SECTION5-->
+		
+		<!--FOOTER-->
+		<div class="footer container-fluid">
+
+					{% load static %}
+					<a href="http://127.0.0.1:8000"><img src="{% static '../static/blog/pic/Logo-long-en.png' %}" width="280" height="60"></a>
+					
+					<ul class="social-icon">
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/facebook.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/instagram.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/google-plus.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/twitter.png' %}" width="33" height="33"></a></li>
+					</ul>
+					<ul class="social-icon">
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/apple.png' %}" width="33" height="30"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/google-play.png' %}" width="33" height="33"></a></li>
+					</ul>
+
+		</div>
+		<!--/FOOTER-->
+
+   	</body>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+</html>

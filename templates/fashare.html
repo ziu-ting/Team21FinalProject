@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+	<head>
+		<title>Fashare</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="Fashare, Fashare, fashion, clothes, 時尚, 穿搭">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		{% load static %}
+		<link href="{% static '../static/blog/css/main.css' %}" rel="stylesheet">
+
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--HOMEVIDEO-->
+		<div id="introvideo" >
+			{% load static %}
+			<embed src="{% static '../static/blog/vid/introduce.swf' %}"></embed>
+		</div>
+	<!--/HOMEVIDEO-->
+
+	<!--NAVBAR-->
+		<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="850" >
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		        	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		        	</button>
+		        	<!--logo-->
+		        	{% load static %}
+		          	<a class="navbar-brand" href="http://127.0.0.1:8000"><img src="{% static '../static/blog/pic/Logo-long-G.png' %}" style="width: 220px; height: 100px;"></a>
+		          	<!--/logo-->
+		        </div>
+		        <div id="toolnavbar" class="navbar-collapse collapse" >
+		          	<ul class="nav navbar-nav navbar-right">
+		          		<li><a href="#">首頁</a></li>
+					    <li><a href="#section1">特色</a></li>
+				        <li><a href="#section2">功能</a></li>
+				        <li><a href="#section3">下載</a></li>
+				        <li><a href="#section4">關於</a></li>
+						<li><a href="#section5">留言</a></li>				        
+		          		<li id="market"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Market</a></li>
+		          	</ul> 
+		        </div>
+			</div>
+   		</nav>
+   	<!--/NAVBAR-->
+
+   	<!--SECTION1 feature-->
+		<div id="section1" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>三個，您不能錯過<span>Fashare</span>的原因</h1>
+				</div>
+			</div>
+			<!--/title-->
+			
+			<!--content-->
+			<div class="content">
+				<div class="row">
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/ideal.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>「人性化。」</h2>
+							<p>創新的圖搜技術，<br>提供您更人性化的選擇！<br>利用照片就能輕鬆搜尋商品，<br>再也不用為了關鍵字而煩惱！</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/seatback.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>「方便。」</h2>
+							<p>簡易的上傳四部曲，<br>讓您從眾多網路商城平台中，<br>以最實惠的價格，<br>找到您心目中的良衣！</p>
+						</div>
+					</div>
+					<div class="col-sm-4 col-xs-12">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/quick.png' %}" alt="test picture">
+						<div class="feature">
+							<h2>「即時。」</h2>
+							<p>即拍即搜尋！<br>讓您無時無刻輕鬆展開搜尋之旅，<br>為生活增添更豐富的選擇！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/content-->	
+		</div>
+		<!--/SECTION1 feature-->
+
+		<!--SECTION2 work-->
+		<div id="section2" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>讓<span>Fashare</span>，帶給您全新的搜尋體驗</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="content">
+				<div class="row" id="row1">
+					<div class="col-sm-4">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/searchpage.png' %}" style="float: left;">
+					</div>
+					<div class="col-sm-8 col-xs-12">
+						<div class="work">
+							<h2 style="color:  #5CCFB7;">圖搜</h2>
+							<p>每次都花了大把時間在重複搜尋，只為了找尋合適的關鍵字嗎？<br>那您一定要試試看<span>Fashare</span>！<br>只要30秒！拍照，上傳，搜尋！找到商品原來這麼容易！</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="row2">
+					<div class="col-sm-8 col-xs-12">
+						<div class="work">
+							<h2 style="color:  #5CCFB7;">比價</h2>
+							<p>還再辛苦的貨比三家嗎？<br><span>Fashare</span>連接各大網路商城，相關商品一次顯示，<br>再也不用辛苦在各家商城慢慢找尋商品了！</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						{% load static %}
+						<img src="{% static '../static/blog/pic/resultpage.png' %}" style="float: right;">
+					</div>
+				</div>
+				
+			</div>
+			<!--/content-->
+		</div>
+		<!--/SECTION2 work-->
+
+		<!--SECTION3 download-->
+		<div id="section3" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>立即下載<span>Fashare</span>，裝點您的生活！</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="wrap">
+				<a href="#" class="button">GOOGLE PLAY</a>
+				<a href="#" class="button">APP STORE</a>
+			</div>
+
+			<!--/content-->
+		</div>
+		<!--/SECTION3 download-->
+
+		<!--SECTION4 about-->
+		<div id="section4" class="container-fluid">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>更多，那些關於<span>Fashare</span>的事...</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<!--content-->
+			<div class="content">
+				<div class="container">
+					<!--somebody-->
+					<div class="somebody">
+						<div class="row">
+							<div class="col-sm-6 col-xs-12">
+								{% load static %}
+								<img src="{% static '../static/blog/pic/cc.png' %}">
+								<h3>如果您是<br>在搜尋過程中遇到困惑的<span>「使用者」</span></h3>
+								<button type="button" class="btn" data-toggle="collapse" data-target="#demo1">您可以...</button>
+  								<div id="demo1" class="collapse">
+									<ul>
+										<li>查看相關使用常見Q&amp;A<a href="#"><span class="glyphicon glyphicon-forward"></span></a></li>
+										<li>於平日09:00~17:00撥打客服電話<br><small>客服專線：0987-878-787</small></li>
+										
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-6 col-xs-12">
+								{% load static %}
+								<img src="{% static '../static/blog/pic/cb.png' %}">
+								<h3>如果您是<br>對Fashare感興趣的<span>「創投」</span>或<span>「服飾業者」</span></h3>
+								<button type="button" class="btn" data-toggle="collapse" data-target="#demo2">您可以...</button>
+  								<div id="demo2" class="collapse">
+									<ul>
+										<li>查看Fashare相關營運規定及合作條款<a href="#"><span class="glyphicon glyphicon-forward"></span></a></li>
+										<li>以e-mail聯繫我們<br><small>電子信箱：fashare@xxx.com</small></li>
+										<li>填寫專屬客服表單<a href="#section5"><span class="glyphicon glyphicon-forward"></span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/somebody-->					
+				</div>
+			</div>
+			<!--/content-->
+		</div>
+		<!--/SECTION4-->
+
+		<!--SECTION5-->
+		<div id="section5" class="container-fluid" style="background-color: rgba(250, 199, 133, 0.1);">
+			<!--title-->
+			<div class="container">
+				<div class="title">
+					<h1>讓<span>Fashare</span>，解決您的問題</h1>
+				</div>
+			</div>
+			<!--/title-->
+			<div class="content">
+				{% block content %}
+				<div class='container'>
+					{% if message %}
+						<div class='alert alert-warning'>{{ message }}</div>
+					{% endif %}
+						
+					<form name="comment" onsubmit="success()">
+						<div class="col-md-4 form-line">
+				  			<div class="control-group">
+				  				<label class="control-label" for="user_id">Name</label>
+				  				<div class="controls">
+				  					<input required="" type="text" class="form-control" id="user_id" name='user_id' placeholder="請輸入姓名">
+				  				</div>
+						    	
+					  		</div>
+					  		<div class="control-group">
+						    	<label class="control-label" for="user_email">Email</label>
+						    	<div class="controls">
+				  					<input required="" type="email" class="form-control" id="user_email" name='user_email' placeholder="請輸入Email">
+				  				</div>
+						    	
+						  	</div>	
+				  		</div>
+				  		<div class="col-md-8">
+				  			<div class="control-group">
+						    	<label class="control-label" for="post_title">主題</label>
+						    	<div class="controls">
+				  					<input required="" type="text" class="form-control" id="post_title" name='post_title' placeholder="請輸入留言主題">
+				  				</div>
+						    	
+						  	</div>	
+				  			<div class="control-group">
+				  				<label class="control-label" for ="user_post">內容</label>
+				  				<div class="controls">
+				  					<textarea required="" class="form-control" id="user_post" name='user_post' placeholder="請輸入留言內容"></textarea>
+				  				</div> 	
+				  			</div>
+				  			<div>
+				  				<input type='submit' value='確認送出' class="submit">
+				  					<script type="text/javascript">
+				  						function success() {
+
+				  							alert("留言提交成功！\n\n點擊「OK」後，系統將重新導入頁面...");
+				  						}
+				  					</script>
+				  					
+					    		<input type='reset' value='清除重填' class="submit">
+				  			</div>
+						</div>
+					</form>
+				</div>
+
+				{% endblock %}
+
+			</div>
+			<!--content-->
+		</div>
+		<!--/SECTION5-->
+		
+		<!--FOOTER-->
+		<div class="footer container-fluid">
+					
+					{% load static %}
+					<a href="http://127.0.0.1:8000/english"><img src="{% static '../static/blog/pic/Logo-long-ch.png' %}" width="280" height="60"></a>
+
+					<ul class="social-icon">
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/facebook.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/instagram.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/google-plus.png' %}" width="33" height="33"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/twitter.png' %}" width="33" height="33"></a></li>
+					</ul>
+					<ul class="social-icon">
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/apple.png' %}" width="33" height="30"></a></li>
+						<li><a href="#">{% load static %}<img src="{% static '../static/blog/pic/icon/footer/google-play.png' %}" width="33" height="33"></a></li>
+					</ul>
+
+		</div>
+		<!--/FOOTER-->
+
+   	</body>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+
+</html>
